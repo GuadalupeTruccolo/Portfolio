@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Guadalupe Trúccolo</title>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="./1662142410.ico">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!-- Header & Navbar -->
+  <header>
+    <div class="title">
+      <h1>Guadalupe Trúccolo</h1>
+    </div>
+    <div id="menu" class="fas fa-bars"></div>
+    <input type="checkbox" id="check">
+    <label for="check" class="mostrarMenu">
+      &#8801
+    </label>
+    <nav class="navbar">
+      <ul>
+        <li><a class="disabled" href="#home">Home</a></li>
+        <li><a class="disabled" href="#portfolio">Portfolio</a></li>
+        <li><a class="disabled" href="#aboutMe">Acerca de mí</a></li>
+        <li><a class="disabled" href="#contact">Contacto</a></li>
+        <label for="check" class="esconderMenu">
+          &#215
+        </label>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- First section (home) using Flexbox -->
+  <section class="section1" id="home">
+    <div class="container">
+      <div class="flexNOT inicio">
+        <div class="text">
+          <p>¡Hola!</p>
+          <p>Mi nombre es</p>
+          <p><span>Guadalupe Trúccolo</span></p>
+        </div>
+        <!-- Responsive Image -->
+        <div class="imagen">
+          <img src="img/me.gif" alt="imagen portfolio responsive" class="imgPortfolioResponsive">
+        </div>
+        <!-- Anchor aboutMe -->
+        <div class="aboutMe">
+          <a href="#aboutMe" class="button">Acerca de mí &#8681;</a>
+          <!-- Social media -->
+          <div>
+            <a class="buttons" target="_blank" href="https://github.com/GuadalupeTruccolo"><i class="fa-brands fa-github"></i></a>
+            <a class="buttons" target="_blank" href="https://www.linkedin.com/in/guadalupe-tr%C3%BAccolo-14246a250/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a class="buttons" target="_blank" href="https://drive.google.com/file/d/1dAxtC7Srmu3ZLQiwPYxcSk7pBrydhvoC/view?usp=sharing"><i class="fa-solid fa-user-tie"></i></a>
+            <a class="buttons" target="_blank" href="https://discordapp.com/users/guada#5719"><i class="fa-brands fa-discord"></i></a>
+          </div>
+        </div>
+      </div>
+      <img src="img/me.gif" alt="gif portfolio" class="imgPortfolio">
+    </div>
+  </section>
+
+  <!-- Second section (portfolio) - My projects -->
+  <section class="section2">
+    <h2 id="portfolio" class="heading"><i class="fas fa-briefcase"></i> Mi <span>Portfolio</span></h2>
+    <div class="container2">
+      <!-- 1st card -->
+      <div class="cards">
+        <div class="card">
+          <img src="img/color-game.jpg" class="card-img-top" alt="color game">
+          <div class="card-body">
+            <p class="card-text">Juego en el que el usuario deberá adivinar un color a partir de su código RGB.</p>
+            <a target="_blank" href="./color_game/index.html"><button>Ver</button></a>
+          </div>
+        </div>
+        <!-- 2nd card -->
+        <div class="card">
+          <img src="img/to-do-list.jpg" class="card-img-top" alt="to do list">
+          <div class="card-body">
+            <p class="card-text">"To-do list" es una sencilla aplicación de lista de tareas que ayuda a organizar su día.</p>
+            <a target="_blank" href="./to-do_list/index.html"><button>Ver</button></a>
+          </div>
+        </div>
+        <!-- 3rd card -->
+        <div class="card">
+          <img src="img/weather-channel.jpg" class="card-img-top" alt="weather channel">
+          <div class="card-body">
+            <p class="card-text">Aplicación meteorológica en Vanilla JavaScript utilizando Open Weather Map API.</p>
+            <a target="_blank" href="./weather_channel/index.html"><button>Ver</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Third section (aboutMe) - Description -->
+  <section class="section3">
+    <h2 id="aboutMe" class="heading"><i class="fas fa-user-alt"></i> Acerca de <span>mí</span></h2>
+    <div class="container3">
+      <img src="img/me.webp" alt="me">
+      <div class="flexNOT">
+        <p class="me">Soy Guadalupe</p>
+        <p><span class="estudiante">Estudiante de Programación</span></p>
+        <p class="text">Tengo 18 años. Soy alumna de Aprendé Programando desde el año 2021.
+          Dentro del trayecto, realicé diversas tecnologías como:
+          Desarrollo de Aplicaciones Móviles, Desarrollo de Videojuegos
+          y Desarrollo Web 1, 2, 3 y 4. En un futuro quiero ser Desarrolladora 
+          Web para así diseñar, desarrollar, implementar y brindar soluciones 
+          digitales a la comunidad.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fourth section (contact) - Form -->
+  <section class="section4">
+    <h2 id="contact" class="heading"><i class="fas fa-comment-dots"></i> Contacto</h2>
+    <div class="container4">
+      <img src="./img/contact.gif" alt="contact">
+      <form action="https://formspree.io/f/mgeqvwbk" method="post">
+
+        <!-- Input name -->
+        <div class="contenido">
+          <div class="name">
+            <label>
+              <i class='fas fa-user'></i> Nombre: <input type="text" name="name" placeholder="Nombre" required>
+            </label>
+          </div>
+
+          <!-- Input email -->
+          <div class="email">
+            <label>
+              <i class='fas fa-envelope'></i> Correo electrónico: <input type="text" name="email" placeholder="Email" required>
+            </label>
+          </div>
+
+          <!-- Input telephone -->
+          <div class="tel">
+            <label>
+              <i class='fas fa-phone-alt'></i> Teléfono: <input type="text" name="telefono" placeholder="Teléfono">
+            </label>
+          </div>
+
+          <!-- Input message -->
+          <div class="message">
+            <label>
+              <i class="fas fa-comment-dots"></i> Mensaje: <textarea rows="11" cols="35" placeholder="¡Dejá tu mensaje!"></textarea>
+            </label>
+          </div>
+
+          <!-- Button submit -->
+          <div class="button-area">
+            <button type="submit">Enviar <i class="fa fa-paper-plane"></i></button>
+          </div>
+        </div>
+    </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p class="title">Información de contacto</p>
+    <div class="socialMedia">
+      <!-- Mail -->
+      <a href="mailto:truccologuadalupe@gmail.com" target="_blank">
+        <p><i class="fas fa-envelope"></i> truccologuadalupe@gmail.com</p>
+      </a>
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/guadalupe-tr%C3%BAccolo-14246a250/" target="_blank">
+        <p><i class="fa-brands fa-linkedin-in"></i> LinkedIn</p>
+      </a>
+      <!-- Github -->
+      <a href="https://github.com/GuadalupeTruccolo" target="_blank">
+        <p><i class="fa-brands fa-github"></i> Github</p>
+      </a>
+    </div>
+    <!-- Copyright -->
+    <p class="copyright">Copyright &copy; My Website 2022</p>
+  </footer>
+
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/8fd4e9b864.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <!-- Personal Js -->
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

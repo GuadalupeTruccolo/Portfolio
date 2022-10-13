@@ -1,0 +1,772 @@
+/*/ Importing Google fonts /*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+/*/ Reset /*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*/ Header /*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.7rem 10%;
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0px 5px 18px rgb(48 68 247 / 60%);
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/*/ Navbar /*/
+
+header .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .navbar li {
+    margin-left: 40px;
+}
+
+header .navbar ul li a {
+    font-size: 20px;
+    color: #0e2431;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.64px;
+    transition: 0.2s;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover {
+    color: #011aff;
+    border-bottom: 3.2px solid #011aff;
+    padding: 8px 0;
+}
+
+#menu {
+    font-size: 3rem;
+    cursor: pointer;
+    color: rgb(24, 2, 63);
+    display: none;
+}
+
+/*/ Section 1 /*/
+
+.section1 {
+    background-image: url("https://i0.wp.com/www.cssscript.com/wp-content/uploads/2019/01/Create-A-Background-Particles-System-With-JavaScript-And-Canvas-nodes.js.png?fit=512%2C369&ssl=1");
+    height: 480px;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+.section1 .text {
+    font-size: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px;
+    margin-top: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.container span {
+    color: white;
+}
+
+.flexNOT {
+    display: block;
+    font-family: "Poppins", sans-serif;
+}
+
+.inicio {
+    font-size: 40px;
+    font-weight: 800;
+    color: #8CA7FF;
+    margin-top: 50px;
+}
+
+.imgPortfolio {
+    height: 300px;
+    width: auto;
+    border-radius: 200px;
+    background-color: white;
+    padding: 20px;
+    border: 5px solid #18185E;
+}
+
+/*/ Removing responsive image /*/
+
+.imgPortfolioResponsive {
+    display: none;
+}
+
+.button {
+    padding: 14px 40px;
+    border-radius: 4em;
+    transition: 0.5s;
+    color: #fff;
+    background: #FF8793;
+    box-shadow: 0px 5px 18px rgb(48 68 247 / 60%);
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.buttons {
+    margin-top: 30px;
+    font-size: 20px;
+    display: inline-block;
+    line-height: 44px;
+    color: #00d9ff;
+    background-color: #09011b;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    transition-duration: 0.4s;
+}
+
+.buttons:hover {
+    color: #fff;
+    background-color: #00d9ff;
+}
+
+/*/ Section 2 /*/
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px;
+    margin-top: 70px;
+    z-index: -1;
+}
+
+.cards button {
+    background-color: #FF8793;
+    color: white;
+    border: 2px solid #FF8793;
+    border-radius: 12px;
+    padding: 10px 32px;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.cards button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #FF8793;
+}
+
+.card {
+    width: 18rem;
+}
+
+.heading {
+    font-size: 30px;
+    color: rgb(32, 32, 32);
+    font-weight: 800;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: -30px;
+    font-family: "Nunito", sans-serif;
+    background-color: white;
+}
+
+.heading span {
+    color: #FF8793;
+}
+
+/*/ Section 3 /*/
+
+.container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    margin-top: 0px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.container3 img {
+    height: 350px;
+    width: auto;
+}
+
+.section3 {
+    background-color: #E5ECFB;
+}
+
+#aboutMe,
+#contact {
+    padding-top: 50px;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.me {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    font-family: "Nunito";
+    text-transform: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: #1E1E5E;
+    margin-bottom: -1px;
+}
+
+.estudiante {
+    font-size: 1.1rem;
+    color: #8CA7FF;
+    font-weight: 600;
+}
+
+.text {
+    font-size: 1.1rem;
+}
+
+/*/ Section 4 /*/
+
+.container4 {
+    background-color: #1E1E5E;
+    border-radius: 1.5rem;
+    margin: 2rem 5rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.container4 img {
+    border-radius: 1.5rem;
+    height: 550px;
+}
+
+/*/ Section 4 - Form /*/
+
+.contenido {
+    margin-left: 4rem;
+}
+
+.name,
+.email,
+.tel {
+    width: 75%;
+}
+
+.name,
+.email,
+.tel,
+.message {
+    margin-bottom: 25px;
+}
+
+form label {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #8CA7FF;
+}
+
+form i {
+    color: #FF8793;
+}
+
+form input,
+form .message textarea {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 16px 0 10px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    border: 1px solid rgb(51, 51, 51);
+    background: #e5ecfb;
+}
+
+form .button-area {
+    display: flex;
+    float: right;
+    margin-right: 0.6rem;
+}
+
+.button-area button {
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 8px 14px;
+    background: #E67984;
+    box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+    transition: 0.3s ease;
+    font-family: "Nunito", sans-serif;
+    margin-top: -10px;
+}
+
+.button-area button:hover {
+    background: #FF8793;
+}
+
+.button-area span {
+    font-size: 8.5px;
+    padding: 0.5rem;
+    display: none;
+}
+
+.button-area button i {
+    position: relative;
+    top: 3px;
+    left: 1px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.button-area button:hover i {
+    left: 4px;
+}
+
+/*/ Footer /*/
+
+footer {
+    background-color: #e5ecfb;
+    padding: 40px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 20px;
+    padding: 0px 15px;
+    color: #FF8793;
+}
+
+footer .socialMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer .socialMedia p:hover {
+    color: #1E1E5E;
+    transition: 0.3s ease;
+}
+
+footer .title {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer .copyright {
+    padding-top: 20px;
+    font-size: 15px;
+    color: rgb(51, 51, 51);
+}
+
+/*/ Specifications for Hamburger Menu /*/
+
+.navbar ul {
+    transition: 0.4s;
+}
+
+.navbar ul:hover,
+.mostrarMenu:hover,
+.esconderMenu:hover {
+    color: #FF8793;
+}
+
+.mostrarMenu,
+.esconderMenu {
+    font-size: 50px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+
+.mostrarMenu {
+    order: -1;
+}
+
+#check {
+    display: none;
+}
+
+/*/ Responsive design - max-width: 768px /*/
+
+@media (max-width: 768px) {
+
+    /*/ Header /*/
+
+    header {
+        padding: 1rem 5%;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    /*/ Navbar /*/
+
+    header .navbar ul li a {
+        font-size: 13px;
+        letter-spacing: 0.25px;
+    }
+
+    /*/ Section 1 /*/
+
+    .section1 {
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .text {
+        font-size: 45px;
+    }
+
+    .button {
+        font-size: 30px;
+    }
+
+    .buttons {
+        font-size: 30px;
+        line-height: 54px;
+        width: 54px;
+        height: 54px;
+    }
+
+    /*/ Removing previous image /*/
+
+    .imgPortfolio {
+        display: none;
+    }
+
+    /*/ Adding a new image (Responisve design) /*/
+
+    .imgPortfolioResponsive {
+        display: block;
+        height: 350px;
+        width: auto;
+        border-radius: 200px;
+        background-color: white;
+        padding: 20px;
+        border: 5px solid #18185E;
+    }
+
+    .imagen {
+        padding-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+    }
+
+    /*/ Section 2 /*/
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 500px;
+        height: auto;
+        margin: 25px;
+    }
+
+    /*/ Section 3 /*/
+
+    .section3 {
+        margin-top: -10px;
+    }
+
+    .container3 {
+        padding: 70px;
+    }
+
+    .section3 .me {
+        font-size: 40px;
+    }
+
+    .section3 .estudiante {
+        font-size: 20px;
+    }
+
+    .section3 .text {
+        font-size: 30px;
+        padding-top: 15px;
+    }
+
+    .section3 img {
+        display: none;
+    }
+
+    /*/ Section 4 /*/
+
+    .container4 {
+        background-color: #1E1E5E;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container4 .contenido {
+        margin-left: 0rem;
+        margin-right: 0rem;
+        padding-top: 20px;
+
+    }
+
+    /*/ Section 4 - Form /*/
+
+    .container4 input,
+    form .message textarea {
+        width: 500px;
+    }
+
+    /*/ Footer /*/
+
+    footer .socialMedia {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+/*/ Responsive design - max-width: 375px /*/
+
+@media (max-width: 375px) {
+
+    /*/ Header /*/
+
+    header {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    header h1 {
+        padding-top: 8px;
+    }
+
+    /*/ Navbar hamburger /*/
+
+    header .navbar li {
+        margin-left: 0px;
+    }
+
+    header .navbar ul li a {
+        font-size: 30px;
+    }
+
+    header .navbar ul li a:hover,
+    header .navbar ul li a.active {
+        color: #011aff;
+        padding: 20px;
+        border-bottom: 0px;
+    }
+
+    .disabled {
+        color: #0e2431;
+    }
+
+    .navbar ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+        flex-direction: column;
+    }
+
+    .navbar ul a {
+        display: block;
+        padding: 20px;
+    }
+
+    /*/ Checkboxes /*/
+
+    .mostrarMenu,
+    .esconderMenu {
+        display: block;
+    }
+
+    .mostrarMenu {
+        position: absolute;
+        top: -10px;
+        right: 10px;
+    }
+
+    .esconderMenu {
+        position: absolute;
+        top: -10px;
+        right: 10px;
+        color: #FF8793;
+    }
+
+    #check:checked~.navbar ul {
+        right: 0;
+    }
+
+    /*/ Section 1 /*/
+
+    .section1 {
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .section1 .text {
+        font-size: 30px;
+    }
+
+    .button {
+        font-size: 25px;
+    }
+
+    .imagen {
+        padding-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+
+    .imgPortfolioResponsive {
+        height: 300px;
+        width: auto;
+    }
+
+    /*/ Section 2 /*/
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 300px;
+        height: auto;
+        margin: 25px;
+    }
+
+    /*/ Section 3 /*/
+
+    .section3 {
+        margin-top: -10px;
+    }
+
+    .container3 {
+        padding: 20px;
+    }
+
+    .section3 .me {
+        padding-top: 40px;
+        font-size: 40px;
+    }
+
+    .section3 .estudiante {
+        font-size: 19px;
+    }
+
+    .section3 .text {
+        font-size: 25px;
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
+
+    .section3 img {
+        display: none;
+    }
+
+    /*/ Section 4 /*/
+
+    .container4 {
+        background-color: #1E1E5E;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+    }
+
+    .container4 .contenido {
+        margin-left: 0rem;
+        margin-right: 0rem;
+        padding-top: 20px;
+    }
+
+    .container4 img {
+        width: 260px;
+        height: 260px;
+    }
+
+    /*/ Section 4 - Form /*/
+
+    .container4 .contenido .name {
+        padding-top: 15px;
+    }
+
+    .container4 input,
+    form .message textarea {
+        width: 257px;
+    }
+
+    form .button-area {
+        margin-right: 0rem;
+    }
+
+    /*/ Footer /*/
+
+    footer p {
+        font-size: 17px;
+        padding: 0px 15px;
+        color: #FF8793;
+    }
+
+    footer .socialMedia {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}

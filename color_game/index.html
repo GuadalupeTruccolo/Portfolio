@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Game | Trúccolo</title>
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+  <!-- Sylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>
+    The Great
+    <span id="colorDisplay">
+      <!-- El codigo RGB del color ganador -->
+    </span>
+    Guessing Game
+  </h1>
+  <div id="stripe">
+    <span id="message">
+      <!-- Aquí va el mensaje de intentalo nuevamente o correcto -->
+      Reset <!-- Escribo texto y lo oculto para que no haya movimiento cuando se muestre el mensaje -->
+    </span>
+    <div>
+      <button id="reset">Nuevos Colores</button>
+    </div>
+  </div>
+  <div class="buttons">
+    <span class="easy"><button id="easyButton">Easy</button></span>
+    <button class="selected" id="hardButton">Hard</button>
+  </div>
+
+  <div class="container">
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+  </div>
+
+  <!-- Personal JS -->
+  <script src="./script.js"></script>
+</body>
+
+</html>

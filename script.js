@@ -2,16 +2,28 @@ let navbar = document.querySelector('nav');
 let listItems = document.querySelectorAll('li');
 let mostrarMenu = document.querySelector('.mostrarMenu');
 
-// Displaying Responisve design Hamburger Menu
-mostrarMenu.addEventListener("click", function () {
-    navbar.style.display = "block";
-})
+if (matchMedia) {
+    var mq = window.matchMedia("(max-width: 375px)");
+    mq.addListener(WidthChange);
+    WidthChange(mq);
+}
 
-// Hiding Responisve design Hamburger Menu when user clicks an element
-for (let i = 0; i < listItems.length; i++) {
-    listItems[i].addEventListener("click", function () {
-        navbar.style.display = "none";
-    })
+function WidthChange(mq) {
+    if (mq.matches) {
+        // Displaying Responisve design Hamburger Menu
+        mostrarMenu.addEventListener("click", function () {
+            navbar.style.display = "block";
+        })
+
+        // Hiding Responisve design Hamburger Menu when user clicks an element
+        for (let i = 0; i < listItems.length; i++) {
+            listItems[i].addEventListener("click", function () {
+                navbar.style.display = "none";
+            })
+        }
+    } else {
+        navbar.style.display = "block";
+    }
 }
 
 // Start of Tawk.to Script

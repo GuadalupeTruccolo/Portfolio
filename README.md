@@ -18,7 +18,7 @@
 
 </center>
 
-## 🛠 Includes the following projects:
+## 📌 Includes the following projects:
 
 - 🎨 Color game
 - 📝 To-do list

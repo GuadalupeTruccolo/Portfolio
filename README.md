@@ -18,7 +18,7 @@
 
 </center>
 
-## Built With
+##🛠 Built With
 
 This project was built using these technologies.
 
@@ -28,6 +28,12 @@ This project was built using these technologies.
 - Netlify
 - Bootstrap
 
-## Features
+##✨ Features
 
 **📱 Responsive Design**
+
+##🛠 Includes the following projects:
+
+🎨 Color game
+📝 To-do list
+🌦 Weather Channel
